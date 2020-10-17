@@ -9,6 +9,10 @@ app.use(bodyParser.urlencoded({
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + "/public"));
 
-app.listen(4000, function() {
+app.get("/", (req, res) => {
+  res.render("home")
+});
+
+app.listen(4000, () => {
   console.log("Server started on port 4000.");
 });
