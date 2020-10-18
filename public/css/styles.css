@@ -61,7 +61,9 @@ body{
 }
 
 
-
+.navbar-light .navbar-brand{
+  color: #0275d8;
+}
 
 
 .about{
@@ -127,4 +129,25 @@ body{
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+}
+
+.footer{
+   height: 300px;
+  background-color: #0275d8;
+  margin-top: 10rem;
+  color: white;
+}
+
+.copyright-text{
+  font-weight: 200;
+}
+
+.fab, .fas{
+  color: white;
+  font-size: 3rem;
+  transition: opacity .25s ease-in-out;
+}
+
+.fab:hover, .fas:hover{
+  opacity: 0.5;
 }
