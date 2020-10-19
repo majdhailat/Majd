@@ -79,16 +79,13 @@ body{
 }
 
 /* Project */
-.project-title{
-  font-weight: 400;
-}
-
 .project-subtitle{
   font-weight: 200;
+  font-size: 0.9rem;
 }
 
 .tech-used{
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 200;
 }
 
@@ -105,29 +102,6 @@ body{
   background-color: #292b2c;
 }
 
-.project-preview:hover .preview-image{
-  opacity: 0;
-}
-
-.project-preview:hover .preview-content {
-  opacity: 1;
-}
-
-.preview-content {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  width: 70%;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
 
 .iOS .preview-image, .iOS .project-preview{
   border-radius: 15px;
@@ -135,7 +109,7 @@ body{
 
 /* Footer */
 .footer{
-   height: 300px;
+   height: 250px;
   background-color: #0275d8;
   margin-top: 10rem;
   color: white;
@@ -149,4 +123,93 @@ body{
 
 .fab:hover, .fas:hover{
   opacity: 0.5;
+}
+
+.footer-text{
+  display: block;
+  height: 50px;
+}
+
+
+@media (min-width: 768px){
+  .project-preview:hover .preview-image{
+    opacity: 0;
+  }
+
+  .project-preview:hover .preview-content {
+    opacity: 1;
+  }
+
+  .preview-content {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  .mobile-project-text{
+    display: none;
+  }
+
+  .mobile-project-buttons{
+    display: none;
+  }
+}
+
+/* medium */
+@media (max-width: 991px) {
+  .middle-col{
+    margin-bottom: 4rem;
+  }
+}
+
+/* small */
+@media (max-width: 767px) {
+
+
+  .iOS .not-bottom-col{
+    margin-bottom: 5rem;
+  }
+
+  .preview-content{
+    display: none
+  }
+
+  .project-preview{
+    background-color: white;
+  }
+
+  .project-category-subtitle{
+    display: none;
+  }
+}
+
+/* extra small */
+@media (max-width: 575px) {
+  .title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .iOS .not-bottom-col{
+    margin-bottom: 3rem;
+  }
+
+  .project-category .container{
+    margin-top: 3rem;
+  }
+
+  .project-category{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
 }
