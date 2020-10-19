@@ -81,7 +81,6 @@ body{
 /* Project */
 .project-subtitle{
   font-weight: 200;
-  font-size: 0.9rem;
 }
 
 .tech-used{
@@ -174,8 +173,6 @@ body{
 
 /* small */
 @media (max-width: 767px) {
-
-
   .iOS .not-bottom-col{
     margin-bottom: 5rem;
   }
